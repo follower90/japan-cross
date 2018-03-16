@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Japan Cross</title>
+    <link rel="stylesheet" href="styles/style.css"/>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/d3/4.10.2/d3.min.js"></script>
+    <script src="scripts/app.js"></script>
+</head>
+<body>
+<div id="japan-cross">
+    <h1>Japan Cross Game</h1>
+
+    <div id="status">0</div>
+    <div class="game">
+        <div class="game-row-1">
+            <div id="sep"></div>
+            <div id="colConditions"></div>
+        </div>
+        <div class="game-row-2">
+            <div id="rowConditions"></div>
+            <div id="picture">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var input =  [
+            1, 1, 1, 1, 1, 1, 1,
+            1, 0, 0, 0, 0, 0, 1,
+            0, 0, 1, 0, 1, 0, 0,
+            1, 0, 0, 0, 0, 0, 1,
+            1, 1, 1, 1, 1, 1, 1,
+        ];
+
+        JapanCross(input, 7, 5, 30)();
+    </script>
+</body>
+</html>
